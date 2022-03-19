@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #00ff0dc4;
+}
+body a {
+  color: #a6ff00b4;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body ul {
+  list-style-type: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+@media (max-width: 425px) {
+  .header {
+    padding: 1.1rem;
+  }
+}
+.header-brand {
+  color: #15ff00;
+  font-size: 3rem;
+}
+.header-navbar ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 425px) {
+  .header-navbar ul {
+    display: none;
+  }
+}
+.header-navbar ul li {
+  margin: 0 1rem 0 0;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.header-navbar ul li .active {
+  color: #7bff00;
+}
+.header-navbar ul li a:hover {
+  color: #7bff00;
+}
+.header-social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.header-social-media ul li {
+  margin: 0 1rem;
+}
+.header-social-media ul a:hover {
+  color: #7bff00;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 0;
+}
+@media (max-width: 425px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+.gallery-card {
+  width: 31%;
+  height: 400px;
+  margin-bottom: 1%;
+  margin-right: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 425px) {
+  .gallery-card {
+    width: 80%;
+    margin-bottom: 6%;
+  }
+}
+.gallery-card-tilte {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.gallery-card-btn {
+  padding: 0.6em 2rem;
+  border: solid 4px #7bff00;
+  color: #15ff00;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.gallery-card-btn:hover {
+  background-color: white;
+}
+.gallery #card-1 {
+  background-image: url("../img/animais.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: greyscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-1:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.745), rgba(0, 0, 0, 0.745)), url(../img/animais.jpg);
+  opacity: 1;
+}
+.gallery #card-2 {
+  background-image: url("../img/arquitetura.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: greyscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-2:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.745), rgba(0, 0, 0, 0.745)), url(../img/arquitetura.jpg);
+  opacity: 1;
+}
+.gallery #card-3 {
+  background-image: url("../img/cidade.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: greyscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-3:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.745), rgba(0, 0, 0, 0.745)), url(../img/cidade.jpg);
+  opacity: 1;
+}
+.gallery #card-4 {
+  background-image: url("../img/decoracao.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: greyscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-4:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.745), rgba(0, 0, 0, 0.745)), url(../img/decoracao.jpg);
+  opacity: 1;
+}
+.gallery #card-5 {
+  background-image: url("../img/esportes.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: greyscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-5:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.745), rgba(0, 0, 0, 0.745)), url(../img/esportes.jpg);
+  opacity: 1;
+}
+.gallery #card-6 {
+  background-image: url("../img/natureza.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: greyscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-6:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.745), rgba(0, 0, 0, 0.745)), url(../img/natureza.jpg);
+  opacity: 1;
+}
+.gallery #card-7 {
+  background-image: url("../img/paisagem.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: greyscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-7:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.745), rgba(0, 0, 0, 0.745)), url(../img/paisagem.jpg);
+  opacity: 1;
+}
+.gallery #card-8 {
+  background-image: url("../img/pessoas.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: greyscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-8:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.745), rgba(0, 0, 0, 0.745)), url(../img/pessoas.jpg);
+  opacity: 1;
+}
+.gallery #card-9 {
+  background-image: url("../img/refeicoes.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: greyscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-9:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.745), rgba(0, 0, 0, 0.745)), url(../img/refeicoes.jpg);
+  opacity: 1;
+}
+
+footer {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
